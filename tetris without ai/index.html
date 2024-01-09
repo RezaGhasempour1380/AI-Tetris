@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="stats">
+            <div id="pointsDisplay">Points: <span id="pointsValue">0</span></div>
+            <div id="timerDisplay">Time: <span id="timerValue">0</span></div>
+        </div>
+
+        <div id="buttonMapping">
+            <h2>Button Mapping</h2>
+            <ul>
+                <li><strong>Spacebar:</strong> Rotate</li>
+                <li><strong>Right Arrow / D:</strong> Move Right</li>
+                <li><strong>Left Arrow / A:</strong> Move Left</li>
+                <li><strong>Down Arrow / S:</strong> Move Down Faster</li>
+                <li><strong>R:</strong> Reset Game</li>
+            </ul>
+        </div>
+
+        <div id="canvasContainer">
+            <canvas id="tetrisCanvas"></canvas>
+            <canvas id="extraCanvas" width="300" height="600"></canvas> <!-- New canvas for extra content -->
+        </div>
+
+        <div id="gameOverOverlay">
+            <div id="gameOverText">Game Over</div>
+            <button id="resetButton" onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>

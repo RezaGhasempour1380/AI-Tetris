@@ -1,0 +1,22 @@
+{
+    "rows" : 30,
+    "columns" : 15,
+    "seed" : 134,
+    "population_size" : 100,
+    "mutation_strength" : 0.6,
+    "mutation_rate" : 0.4,
+    "number_of_generation" : 200,
+    "games_per_agent" : 3,
+    "top_percent" : 0.4,
+    "max_ticks" : 200,
+    "idiot_percent_chosen" : 0.1,
+
+    "mutation_rates": {
+        "0": 0.4,
+        "30": 0.3,
+        "50": 0.25,
+        "100": 0.2,
+        "150": 0.15
+ 
+    }
+}

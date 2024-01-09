@@ -1,0 +1,112 @@
+/* Global styles */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Styles for all canvas elements */
+canvas {
+    border: 2px solid #ddd;
+}
+
+/* Styles for the extra canvas */
+#extraCanvas {
+    margin-top: 20px;
+}
+
+/* Styles for the game over overlay */
+#gameOverOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none; /* Initially hidden */
+}
+
+/* Styles for the game over text */
+#gameOverText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styles for the reset button */
+#resetButton {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Styles for the button mapping section */
+#buttonMapping {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the button mapping title */
+#buttonMapping h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styles for the button mapping list */
+#buttonMapping ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for the button mapping list items */
+#buttonMapping li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Styles for the stats section */
+#stats {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Styles for the points and timer displays */
+#pointsDisplay, #timerDisplay {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the points and timer values */
+#pointsValue, #timerValue {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+/* Styles for the main container */
+#container {
+    display: flex;
+    flex-direction: row;
+}

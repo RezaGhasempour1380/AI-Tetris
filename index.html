@@ -1,0 +1,62 @@
+<!-- FILEPATH: /d:/Users/user/Downloads/homework/5th sem/tetris/tetris test with/index.html -->
+<!--
+    This is the main HTML file for the Tetris game.
+    It contains the structure and layout of the game interface.
+    The game elements include the stats display, button mapping, canvas container, and game over overlay.
+    The necessary JavaScript files for the game functionality are also included.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- The title of the webpage -->
+  <title>Simple HTML Template</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container for the game -->
+    <div id="container">
+        <!-- Section for displaying game stats -->
+        <div id="stats">
+            <!-- Display for points -->
+            <div id="pointsDisplay">Points: <span id="pointsValue">0</span></div>
+            <!-- Display for timer -->
+            <div id="timerDisplay">Time: <span id="timerValue">0</span></div>
+        </div>
+
+        <!-- Section for displaying button mappings -->
+        <div id="buttonMapping">
+            <h2>Button Mapping</h2>
+            <ul>
+                <li><strong>Spacebar:</strong> Rotate</li>
+                <li><strong>Right Arrow / D:</strong> Move Right</li>
+                <li><strong>Left Arrow / A:</strong> Move Left</li>
+                <li><strong>Down Arrow / S:</strong> Move Down Faster</li>
+                <li><strong>R:</strong> Reset Game</li>
+            </ul>
+        </div>
+
+        <!-- Section for the game canvas -->
+        <div id="canvasContainer">
+            <!-- Main game canvas -->
+            <canvas id="tetrisCanvas"></canvas>
+            <!-- Extra canvas for additional game elements -->
+            <canvas id="extraCanvas" width="300" height="600"></canvas> 
+        </div>
+
+        <!-- Overlay displayed when the game is over -->
+        <div id="gameOverOverlay">
+            <!-- Text displayed when the game is over -->
+            <div id="gameOverText">Game Over</div>
+            <!-- Button to reset the game -->
+            <button id="resetButton" onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+  <!-- jQuery library -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- External JavaScript file -->
+  <script type="text/javascript" src="test.js"></script>
+  <!-- JavaScript file for the Tetris game -->
+  <script src="tetris.js"></script>
+</body>
+</html>

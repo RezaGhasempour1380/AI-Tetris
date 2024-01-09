@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+canvas {
+    border: 2px solid #ddd;
+}
+
+#extraCanvas {
+    margin-top: 20px; /* Adjust distance from the main canvas */
+}
+
+#gameOverOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha (fourth value) for transparency */
+    display: none;
+}
+
+#gameOverText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#resetButton {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#buttonMapping {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#buttonMapping h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#buttonMapping ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#buttonMapping li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#stats {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #333;
+    font-size: 1.5rem; /* Increase font size for better visibility */
+}
+
+#points, #timer {
+    margin-bottom: 10px;
+    font-weight: bold; /* Make the text bold */
+}
+
+#pointsDisplay, #timerDisplay {
+    display: flex;
+    align-items: center;
+}
+
+#pointsDisplay::before, #timerDisplay::before {
+    content: "\2022"; /* Add a bullet point as a visual separator */
+    margin-right: 10px;
+    font-size: 1.5rem; /* Increase size of bullet point */
+    color: #555; /* Adjust color of the separator */
+}
+
+#pointsValue, #timerValue {
+    font-size: 1.2rem; /* Increase font size of numeric values */
+    margin-left: 5px; /* Add a small margin to separate from the separator */
+}
+
+#container {
+    display: flex;
+    flex-direction: row; /* Arrange elements in a row */
+}
